@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaddleOCR ONNX Web Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'NotoSansJP';
+            src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap') format('woff2');
+        }
+        body {
+            font-family: 'NotoSansJP', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PaddleOCR ONNX Web Demo (Japanese)</h1>
+        <input type="file" id="imageUpload" accept="image/*">
+        <div id="loading" class="hidden">Loading models and processing...</div>
+        <canvas id="canvas" class="hidden"></canvas>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.14.0/dist/ort.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
